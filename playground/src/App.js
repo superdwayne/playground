@@ -9,7 +9,7 @@ import './App.css';
 
 
 function VideoFlying() {
-  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Flying.mp4', crossOrigin: 'Anonymous', loop: true, muted: true, autoPlay: true }))
+  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Flying.mp4', crossOrigin: 'Anonymous', loop: true, muted: true, autoplay: true }))
   useEffect(() => void video.play(), [video])
 
   
@@ -24,8 +24,9 @@ function VideoFlying() {
 }
 
 function VideoAR() {
-  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Arhead.mp4', crossOrigin: 'Anonymous', loop: true, muted: true, autoPlay: true }))
+  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Arhead.mp4', crossOrigin: 'Anonymous', loop: true, autoplay: true }))
   useEffect(() => void video.play(), [video])
+  console.log(video)
   return (
     <mesh position={[10, 3, 2]} rotation={[0, 0, 0]} scale={[17, 10, 14]}>
       <boxBufferGeometry />
@@ -37,7 +38,7 @@ function VideoAR() {
 }
 
 function VideoShoe() {
-  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Shoes.mp4', crossOrigin: 'Anonymous', loop: true, muted: true, autoPlay: true }))
+  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Shoes.mp4', crossOrigin: 'Anonymous', loop: true, muted: true, autoplay: true}))
   useEffect(() => void video.play(), [video])
   return (
     <mesh position={[-15, 10, 6]} rotation={[0, 0, 0]} scale={[17, 10, 14]}>
