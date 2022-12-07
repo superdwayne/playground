@@ -1,5 +1,13 @@
-.App {
-  text-align: center;
+nav
+{
+  display: flex;
+    column-count: 2;
+    justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .App-logo {
