@@ -22,7 +22,7 @@ const VideoFlying = ({ muted, autoplay }) => {
 
 
 const VideoAR = ({ muted, autoplay }) => {
-  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Arhead.mp4', crossOrigin: 'Anonymous', loop: true, defaultMuted: true, muted: true,  autoplay: true}))
+  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/ARhead.mp4', crossOrigin: 'Anonymous', loop: true, defaultMuted: true, muted: true,  autoplay: true}))
   console.log(video)
   useEffect(() => void video.play(), [video] );
 
