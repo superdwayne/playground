@@ -1,13 +1,12 @@
 import {
     BrowserRouter as Router,
-    Routes, //replaces "Switch" used till v5
+    Routes,
     Route,
     Link
   } from "react-router-dom";
   import Shapes from '../shapes/shapes'
   import Water from '../water/water'
 
-  
   export default function Nav() {
     return (
       <>
