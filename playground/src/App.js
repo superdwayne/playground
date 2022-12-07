@@ -20,10 +20,8 @@ function VideoShoe() {
 }
 
 const Video = ({ muted, autoplay }) => {
-  const vid = useRef();
   
-  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Shoes.mp4', crossOrigin: 'Anonymous', loop: true, defaultMuted: true, autoplay: true}))
-
+  const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/video/Shoes.mp4', crossOrigin: 'Anonymous', loop: true, defaultMuted: true, muted: true,  autoplay: true}))
 
   console.log(video)
 useEffect(() => void video.play(), [video] );
