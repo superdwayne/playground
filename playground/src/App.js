@@ -57,13 +57,13 @@ const VideoShoe = ({ muted, autoplay }) => {
 export default function App() {
   return (
     <>
-    <Canvas  camera={{ position: [0, 5, 50], fov: 75, near: 1, far: 20000 }}
+    {/* <Canvas  camera={{ position: [0, 5, 50], fov: 75, near: 1, far: 20000 }}
      style={{backgroundColor: "white" , display: "block" , height: "100vh", width: "100vw"}}>
       <OrbitControls />
       <VideoAR muted autoplay />
       <VideoShoe muted autoplay />
       <VideoFlying muted autoplay />
-    </Canvas>
+    </Canvas> */}
       <Nav />
     </>
   );
