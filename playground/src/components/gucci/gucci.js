@@ -1,7 +1,7 @@
 import { Suspense, useMemo, useRef  } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Leva, folder, useControls } from "leva";
-import { useGLTF,OrbitControls, useFBO,MeshReflectorMaterial  } from '@react-three/drei'
+import { useGLTF,OrbitControls, useFBO, MeshTransmissionMaterial  } from '@react-three/drei'
 import * as THREE from "three";
 import { v4 as uuidv4 } from "uuid";
 import './gucci.css';
@@ -152,7 +152,8 @@ const Geometries = () => {
         </group>
         <mesh ref={mesh}>
         <planeBufferGeometry  args={[25, 15, 32, 100]} position={[10, 0 , -10]} />
-          {/* <torusGeometry args={[3, 1, 32, 100]} /> */}
+        {/* <MeshTransmissionMaterial color="hotpink"  /> */}
+
           <mesh geometry={nodes.id_Punta001.geometry} material={materials.Default} position={[0, -1, -1.3]} rotation={[0, 0, 0]} scale={20} />
 
           <shaderMaterial
@@ -196,18 +197,7 @@ export default function lights(props) {
        <OrbitControls />
        <Geometries />
        
-       <MeshReflectorMaterial
-              blur={[300, 100]}
-              resolution={2048}
-              mixBlur={1}
-              mixStrength={40}
-              roughness={1}
-              depthScale={1.2}
-              minDepthThreshold={0.4}
-              maxDepthThreshold={1.4}
-              color="#ffffff"
-              metalness={0.5}
-            />
+       
       </Suspense>
    
     </Canvas>

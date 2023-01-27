@@ -8,6 +8,7 @@ import {
   import Water from '../water/water'
   import Tensor from '../tensorflow/tensor'
   import Gucci from '../gucci/gucci'
+  import Lego from '../Lego/lego'
 
   export default function Nav() {
     return (
@@ -18,6 +19,7 @@ import {
               <Route path="/water" element={<Water />} />
               <Route path="/tensor" element={<Tensor />} />
               <Route path="/gucci" element={<Gucci />} />
+              <Route path="/lego" element={<Lego />} />
           </Routes>
           <header>
             <nav className='App-header'>
@@ -25,6 +27,7 @@ import {
               <Link to="/water">Floating effect</Link>
               <Link to="/tensor">Tensorflow</Link>
               <Link to="/gucci">Gucci</Link>
+              <Link to="/lego">Lego</Link>
             </nav>
           </header>
     </Router>  
