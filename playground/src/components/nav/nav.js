@@ -27,7 +27,7 @@ import {
               <Link to="/water">Floating effect</Link>
               <Link to="/tensor">Tensorflow</Link>
               <Link to="/gucci">Gucci</Link>
-              <Link to="/lego">Lego</Link>
+              <Link to="/lego">Gucci shoe 2.0</Link>
             </nav>
           </header>
     </Router>  
