@@ -9,7 +9,8 @@ import {
   import Tensor from '../tensorflow/tensor'
   import Gucci from '../gucci/gucci'
   import Lego from '../Lego/lego'
-  import Motion from '../motion/motion'
+  import Ball from '../ball/ball'
+
 
   export default function Nav() {
     return (
@@ -21,7 +22,7 @@ import {
               <Route path="/tensor" element={<Tensor />} />
               <Route path="/gucci" element={<Gucci />} />
               <Route path="/lego" element={<Lego />} />
-              <Route path="/dance" element={<Motion />} />
+              <Route path="/ball" element={<Ball />} />
           </Routes>
           <header>
             <nav className='App-header'>
@@ -30,7 +31,7 @@ import {
               <Link to="/tensor">Tensorflow</Link>
               <Link to="/gucci">Gucci</Link>
               <Link to="/lego">Gucci shoe 2.0</Link>
-              <Link to="/dance">Avatar dance</Link>
+              <Link to="/ball">Ball animation</Link>
               
             </nav>
           </header>
