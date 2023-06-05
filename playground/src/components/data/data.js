@@ -87,7 +87,7 @@ const [videoMuted, setVideoMuted] = useState(true);
 
   const [video] = useState(() => {
     const vid = document.createElement("video");
-    vid.src = 'https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/61031ee5-81ec-47e2-a7ba-86a9aba2cd9b/a02f25c0-b720-419a-9153-50c5ec53ae81/main.mp4?fastly_token=NjQ3ZTM2NzVfMWQwNTczMGMwODVkYmY5ODg2NzY4MDRkZjczZGVmMmRkOTU0MGVkYmMyYzRmYTc2MzU5ZDRkODg5NTBkMDc4Zl8vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvMjkyNDkyMTE4MzAwMS82MTAzMWVlNS04MWVjLTQ3ZTItYTdiYS04NmE5YWJhMmNkOWIvYTAyZjI1YzAtYjcyMC00MTlhLTkxNTMtNTBjNWVjNTNhZTgxL21haW4ubXA0';
+    vid.src = 'https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/61031ee5-81ec-47e2-a7ba-86a9aba2cd9b/a02f25c0-b720-419a-9153-50c5ec53ae81/main.mp4';
     vid.crossOrigin = "Anonymous";
     vid.loop = true;
     vid.muted = videoMuted;
