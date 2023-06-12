@@ -108,7 +108,7 @@ export const Rainbow = forwardRef(({ startRadius = 0, endRadius = 0.5, emissiveI
   useFrame((state, delta) => (material.current.time += delta * material.current.speed))
   return (
     <mesh ref={fRef} scale={[length, length, 1]} {...props}>
-      <planeGeometry />
+      <boxGeometry />
       <rainbowMaterial ref={material} key={RainbowMaterial.key} fade={fade} startRadius={startRadius} endRadius={endRadius} ratio={1} toneMapped={false} />
     </mesh>
   )
