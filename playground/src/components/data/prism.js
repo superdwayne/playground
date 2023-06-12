@@ -16,7 +16,7 @@ export function Prism({ onRayOver, onRayOut, onRayMove, ...props }) {
  
     const group = useRef()
     const { actions } = useAnimations(animations, group)
-    console.log(nodes)
+   // console.log(nodes)
   return (
     // <group {...props}>
     //   {/* A low-res, invisible representation of the prism that gets hit by the raycaster */}

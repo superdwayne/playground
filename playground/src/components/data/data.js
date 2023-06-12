@@ -18,7 +18,7 @@ export default function Data() {
   return (
    <>
      
-    <Canvas orthographic gl={{ antialias: false }} camera={{ position: [0, 0, 100], zoom: 70 }} style={{backgroundColor: "white", height: "100vh", width: "100vw"}}>
+    <Canvas orthographic gl={{ antialias: false }} camera={{ position: [0, 0, 100], zoom: 70 }} style={{ backgroundColor: "white", height: "100vh", width: "100vw"}}>
      {/* <OrbitControls /> */}
       <color attach="background" args={['black']} />
       <Scene />
@@ -87,7 +87,7 @@ const [videoMuted, setVideoMuted] = useState(true);
 
   const [video] = useState(() => {
     const vid = document.createElement("video");
-    vid.src = 'https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/2924921183001/61031ee5-81ec-47e2-a7ba-86a9aba2cd9b/a02f25c0-b720-419a-9153-50c5ec53ae81/main.mp4';
+    vid.src = '1678883447406.mp4';
     vid.crossOrigin = "Anonymous";
     vid.loop = true;
     vid.muted = videoMuted;
@@ -132,10 +132,14 @@ const [videoMuted, setVideoMuted] = useState(true);
       {/* Prism + blocks + reflect beam */}
       <Beam ref={boxreflect} bounce={50} far={20}>
         <Prism position={[0, -0.5, 0]} onRayOver={rayOver} onRayOut={rayOut} onRayMove={rayMove} />
-        <Box name="box1" position={[7, -3.5, 0]} rotation={[0, 0, Math.PI / 3.5]}  onRayOver={() => setVideoMuted(false)} onRayOut={() => setVideoMuted(true)}/>
+        <Box name="box1" position={[7, -3.5, 0]} rotation={[0, 0, Math.PI / 3.5]}  onPointerEnter={() => setVideoMuted(false)} onPointerLeave={() => setVideoMuted(true)}/>
         <Box position={[-4, 2, 0]} rotation={[0, 0, Math.PI / 4]} />
+        
+      
+        
         <Box position={[-3.5, -4, 0]} rotation={[0, 0, Math.PI / 4]} />
         <Box position={[-1, 5, 0]} rotation={[0, 0, Math.PI / 3.5]} />
+
         <Box position={[6.5, 1, 0]} rotation={[0, 0, Math.PI / 3.5]} />
       </Beam>
       {/* Rainbow and flares */}
