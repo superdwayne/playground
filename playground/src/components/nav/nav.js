@@ -11,6 +11,7 @@ import {
   import Lego from '../Lego/lego'
   import Ball from '../ball/ball'
   import Data from '../data/data'
+  import Map from '../map/map'
 
 
   export default function Nav() {
@@ -25,6 +26,7 @@ import {
               <Route path="/lego" element={<Lego />} />
               <Route path="/ball" element={<Ball />} />
               <Route path="/data" element={<Data />} />
+              <Route path="/map" element={<Map />} />
           </Routes>
           <header>
             <nav className='App-header'>
@@ -35,6 +37,7 @@ import {
               <Link to="/lego">Gucci shoe 2.0</Link>
               <Link to="/ball">Ball animation</Link>
               <Link to="/data">Data Vis</Link>
+              <Link to="/map">Maps</Link>
               
             </nav>
           </header>
