@@ -12,6 +12,7 @@ import {
   import Ball from '../ball/ball'
   import Data from '../data/data'
   import Map from '../map/map'
+  import Portal from '../portal/portal'
 
 
   export default function Nav() {
@@ -27,6 +28,7 @@ import {
               <Route path="/ball" element={<Ball />} />
               <Route path="/data" element={<Data />} />
               <Route path="/map" element={<Map />} />
+              <Route path="/portal" element={<Portal />} />
           </Routes>
           <header>
             <nav className='App-header'>
@@ -38,6 +40,7 @@ import {
               <Link to="/ball">Ball animation</Link>
               <Link to="/data">Data Vis</Link>
               <Link to="/map">Maps</Link>
+              <Link to="/portal">Porral</Link>
               
             </nav>
           </header>
