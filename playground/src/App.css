@@ -5,6 +5,10 @@ nav
     justify-content: space-around;
 }
 
+.white {
+  color: #fff;
+}
+
 nav a {
   color: #fff;
   text-decoration: none;
