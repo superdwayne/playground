@@ -14,7 +14,11 @@ import {
   import Map from '../map/map'
   import Portal from '../portal/portal'
   import Head from '../head/head'
+
   import Environment from '../environment/environment'
+
+  import Falling from '../falling/falling'
+
 
 
   export default function Nav() {
@@ -32,14 +36,18 @@ import {
               <Route path="/map" element={<Map />} />
               <Route path="/portal" element={<Portal />} />
               <Route path="/head" element={<Head />} />
+
               <Route path="/environment" element={<Environment />} />
+
+              <Route path="/falling" element={<Falling />} />
+
 
           </Routes>
           <header>
             <nav className='App-header'>
               <Link to="/shapes">Nike Jordans particles</Link> 
               <Link to="/water">Floating effect</Link>
-              <Link to="/tensor">Tensorflow</Link>
+              {/* <Link to="/tensor">Tensorflow</Link> */}
               <Link to="/gucci">Gucci</Link>
               <Link to="/lego">Gucci shoe 2.0</Link>
               <Link to="/ball">Ball animation</Link>
@@ -47,7 +55,11 @@ import {
               <Link to="/map">Maps</Link>
               <Link to="/portal">Porral</Link>
               <Link to="/head">Head</Link>
+
               <Link to="environment">Environment</Link>
+
+              <Link to="/falling">Falling</Link>
+
             </nav>
           </header>
     </Router>  
