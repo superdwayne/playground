@@ -14,6 +14,7 @@ import {
   import Map from '../map/map'
   import Portal from '../portal/portal'
   import Head from '../head/head'
+  import Environment from '../environment/environment'
 
 
   export default function Nav() {
@@ -31,6 +32,7 @@ import {
               <Route path="/map" element={<Map />} />
               <Route path="/portal" element={<Portal />} />
               <Route path="/head" element={<Head />} />
+              <Route path="/environment" element={<Environment />} />
 
           </Routes>
           <header>
@@ -45,6 +47,7 @@ import {
               <Link to="/map">Maps</Link>
               <Link to="/portal">Porral</Link>
               <Link to="/head">Head</Link>
+              <Link to="environment">Environment</Link>
             </nav>
           </header>
     </Router>  
